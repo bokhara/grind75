@@ -17,9 +17,7 @@ impl TreeNode {
     }
 }
 
-use std::borrow::Borrow;
 use std::cell::RefCell;
-use std::ops::Sub;
 use std::rc::Rc;
 pub fn is_balanced(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
     let balanced_result = is_balanced_tree(root);

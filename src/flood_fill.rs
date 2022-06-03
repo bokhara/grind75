@@ -8,7 +8,7 @@ use std::borrow::BorrowMut;
 // 0 <= sc < n
 pub fn flood_fill(image: Vec<Vec<i32>>, sr: i32, sc: i32, new_color: i32) -> Vec<Vec<i32>> {
     let origin_color = image[sr as usize][sc as usize];
-    if (origin_color == new_color) {
+    if origin_color == new_color {
         return image;
     }
     let mut image_mute = image.clone();
